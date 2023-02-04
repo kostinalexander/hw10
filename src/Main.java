@@ -61,7 +61,6 @@ public class Main {
     public static void Task3 () {
         System.out.println("Задание3");
         int deliveryDistant = 11;
-        int timeDelivery = 1;
         printDeliveryDays(deliveryDistant );
 
 
