@@ -2,22 +2,24 @@ public class Main {
     public static void printYearLeap(int yearLeap) {
         if (yearLeap % 4 == 0 && yearLeap % 100 != 0 || yearLeap % 400 == 0) {
             System.out.println("год високосный");
-        } else {
+        } else  {
             System.out.println("год не високосный");
         }
     }
     public static void printOsSystem(int year,int os) {
         if(year>=2015 && os==0){
             System.out.println("Установите версию на сайте для IOS");
-        } if(year<2015 && os==0){
+        } else if (year<2015 && os==0){
             System.out.println("Установите облегчённую версию для IOS");
         }if (year>=2015 && os==1){
             System.out.println("Усатновите версию на сайте для Андроид");
-        } if (year<2015 && os==1) {
+        } else if (year<2015 && os==1) {
             System.out.println("Установите облегчённую версию для Андроид");
         }
     }
-    public static void printDeliveryDays(int distant, int time){
+    public static void printDeliveryDays(int distant){
+        int time = 0;
+
         if (distant<=20){
             time = 1;
             System.out.println("Доставка займёт "+ time+ " день");
@@ -58,9 +60,9 @@ public class Main {
     }
     public static void Task3 () {
         System.out.println("Задание3");
-        int deliveryDistant = 114;
+        int deliveryDistant = 11;
         int timeDelivery = 1;
-        printDeliveryDays(deliveryDistant,timeDelivery );
+        printDeliveryDays(deliveryDistant );
 
 
     }
